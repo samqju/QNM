@@ -1,0 +1,33 @@
+/* animations.css */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff0;
+    opacity: 0.8;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: confetti-fall 2s linear forwards;
+}
+
+@keyframes confetti-fall {
+    from {
+        transform: translateY(-100px) rotate(0deg);
+    }
+    to {
+        transform: translateY(300px) rotate(360deg);
+    }
+}
+
+.sad-animation {
+    /* Example styles for sad animation */
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
